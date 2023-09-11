@@ -1,6 +1,6 @@
 const TelegramApi = require('node-telegram-bot-api');
 const {gameOptions, againOptions} = require('./options');
-const token = '6673783373:AAECjlJjJM8kVvelDbnweDRgMHWjZwEq20Y';
+const token = '';
 
 const bot = new TelegramApi(token, { polling: true });
 
@@ -50,4 +50,4 @@ bot.on('callback_query', async msg => {
 	}
 
 })
-start();
+start(); 
