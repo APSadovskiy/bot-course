@@ -34,7 +34,7 @@ const start = async () => {
 		const last_name = msg.chat.last_name;
 		try {
 		if (text === '/start') {
-			await UserModel.findOrCreate({where: {chatId: `${chatId}`}});
+			await UserModel.findOrCreate({where: {chatId: `${chatId}`}});// найти или создать
 			await bot.sendSticker(chatId, 'https://tlgrm.eu/_/stickers/ea5/382/ea53826d-c192-376a-b766-e5abc535f1c9/7.webp');
 			return bot.sendMessage(chatId, `Здравствуйте! Это тестовый чат-бот.`);
 		}
